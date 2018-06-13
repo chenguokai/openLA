@@ -4,7 +4,12 @@
 \usepackage{amsfonts}
 
 \begin{document}
-\section{第二章}
+\section{第二章 线性算子}
+\subsection{§1 线性映射的矩阵}
+\paragraph{定义}
+设V,W是F上的线性空间,Hom(V,W)是从V到W的线性映射的集合,它是F上的线性空间.
+\subsubsection{§1.1 矩阵表示}
+设$\vec{e}_{1},...,\vec{e}_{n}$是V的基,$\vec{\varepsilon}_{1},...,\vec{\varepsilon}_{m}$是W的基.$\phi  \in Hom(V,W)    \forall j \in 1,...,n$. 
 \subsection{§5 特征子空间的应用}
 \subsubsection{§5.1 线性算子和矩阵的对角化}
 \paragraph{定义}
@@ -43,7 +48,7 @@ $\Pi : V \to V/U$ 自然投射\\
 则(i)  $\Pi \circ \mathcal{A} = \overline{\mathcal{A}} \circ \Pi$,其中$\overline{\mathcal{A}}$是$\mathcal{A}$关于U的商映射.\\
 (ii) 设$\varphi : V/U \to V/U$满足$\pi \circ \mathcal{A} = \varphi \circ \pi$,则$\varphi = \overline{\mathcal{A}}$
 \paragraph{定理5.3}
-设V是n维线性空间,n>1,设$\mathcal{A}\in \mathcal{L}(V)$,U是$\mathcal{A}$-子空间,d=dimU>0,设$\vec{e_{1},...,\vec{e_{d}}}$是U的基,$\vec{e_{1}},...,\vec{e_{d}},\vec{e_{d+1}},...,\vec{e_{n}}$是V的基.记A|$_{U}$为$A_{U}$,$\mathcal{A}$关于U的商算子为$\overline{\mathcal{A}}$.令$A_{U}$为$\mathcal{A_{U}}$在$\vec{e_{1}},...,\vec{e_{d}}$下的矩阵.$\overline{A}$为$\overline{A}$在$\vec{e_{d+1}},...\vec{e_{n}}$下的矩阵,则$\mathcal{A}$在$\vec{e_{1}},...,\vec{e_{d}},\vec{e_{d+1}},...,\vec{e_{n}}$下的矩阵是\\
+设V是n维线性空间,n>1,设$\mathcal{A}\in \mathcal{L}(V)$,U是$\mathcal{A}$-子空间,d=dimU>0,设$\vec{e}_{1},...,\vec{e}_{d}$是U的基,$\vec{e}_{1},...,\vec{e}_{d},\vec{e}_{d+1},...,\vec{e}_{n}$是V的基.记A|$_{U}$为$A_{U}$,$\mathcal{A}$关于U的商算子为$\overline{\mathcal{A}}$.令$A_{U}$为$\mathcal{A_{U}}$在$\vec{e}_{1},...,\vec{e}_{d}$下的矩阵.$\overline{A}$为$\overline{\mathcal{A}}$在$\vec{e}_{d+1},...\vec{e}_{n}$下的矩阵,则$\mathcal{A}$在$\vec{e}_{1},...,\vec{e}_{d},\vec{e}_{d+1},...,\vec{e}_{n}$下的矩阵是\\
 %matrix begin
 \begin{equation}
 A=
