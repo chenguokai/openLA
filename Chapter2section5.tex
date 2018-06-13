@@ -1,0 +1,63 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section{第二章}
+\subsection{§5 特征子空间的应用}
+\subsubsection{§5.1 线性算子和矩阵的对角化}
+\paragraph{定义}
+设$\mathcal{A}\in\mathcal{L}(V)$，$\mathcal{A}$在F中互不相同的特征根的集合称为$\mathcal{A}$在F上的谱（spectrum）
+\paragraph{定义}
+设$\mathcal{A}\in\mathcal{L}(V)$，如果$\mathcal{A}$在V的某组基下的矩阵是对角的，则称$\mathcal{A}$是可对角化的。设$A \in M_{n}(F)$，如果A相似于某个对角矩阵，则称A在F上是可对角化的。
+\paragraph{定理5.1}
+设$\mathcal{A}\in \mathcal{L}(V)$，则下列断言等价：\\
+(i)$\mathcal{A}$可对角化\\
+(ii)$\mathcal{A}$有n个线性无关的特征向量，其中n=dim(V)\\
+(iii)V=$\bigoplus_{\lambda \in spec(\mathcal{A})}$\\
+\paragraph{推论5.1}
+设$\mathcal{A}\in\mathcal{L}(V)$,dimV=n,如果$\mathcal{A}$在F中有n个互不相同的特征根,则$\mathcal{A}$可对角化.
+\paragraph{定理5.2}
+设$\mathcal{A}\in\mathcal{L}(V)$,则$\mathcal{A}$可对角化$\Leftrightarrow$(i)$\mathcal{X}_{\mathcal{A}}$在F中可以分解为一次多项式之积(ii)$\mathcal{A}$在每个特征根的代数重数与几何重数相同.
+\subsubsection{§5.2 复数方阵的三角化}
+\paragraph{引理5.2}
+设V是$\mathbb{C}$上的n维线性空间,n>0,$\mathcal{A}\in\mathcal{L}(V)$,则$\mathcal{A}$有n-1维不变子空间.
+\paragraph{定理5.3}
+设$\mathcal{A}\in\mathcal{L}(V)$,其中V是$\mathbb{C}$上n维线性空间,则存在V中一组基,使得$\mathcal{A}$在该基下的矩阵是上三角型的.
+\paragraph{推论5.2}
+设A$\in M_{n}(\mathbb{C})$,则A相似于一个上三角型矩阵.
+\paragraph{引理5.3}
+设$\mathcal{A}\in\mathcal{L}(V)$,U是$\mathcal{A}$-子空间,定义: \\
+$\overline{\mathcal{A}}:V/U \to V/U$\\
+$\vec{a}+U\mapsto\mathcal{A}(\vec{a})+U$\\
+则$\overline{\mathcal{A}}\in\mathcal{L}(V/U)$
+\paragraph{定义}
+设$\mathcal{A}\in\mathcal{L}(V)$,U是$\mathcal{A}$-子空间,则\\
+$\overline{\mathcal{A}}:V/U \to V/U$\\
+$\vec{v}+U\mapsto\mathcal{A}(\vec{v})+U$\\
+称为$\mathcal{A}$关于U的商算子.
+\paragraph{命题5.1}
+设$\mathcal{A}\in\mathcal{L}(V)$,U是$\mathcal{A}$-子空间\\
+$\Pi : V \to V/U$ 自然投射\\
+则(i)  $\Pi \circ \mathcal{A} = \overline{\mathcal{A}} \circ \Pi$,其中$\overline{\mathcal{A}}$是$\mathcal{A}$关于U的商映射.\\
+(ii) 设$\varphi : V/U \to V/U$满足$\pi \circ \mathcal{A} = \varphi \circ \pi$,则$\varphi = \overline{\mathcal{A}}$
+\paragraph{定理5.3}
+设V是n维线性空间,n>1,设$\mathcal{A}\in \mathcal{L}(V)$,U是$\mathcal{A}$-子空间,d=dimU>0,设$\vec{e_{1},...,\vec{e_{d}}}$是U的基,$\vec{e_{1}},...,\vec{e_{d}},\vec{e_{d+1}},...,\vec{e_{n}}$是V的基.记A|$_{U}$为$A_{U}$,$\mathcal{A}$关于U的商算子为$\overline{\mathcal{A}}$.令$A_{U}$为$\mathcal{A_{U}}$在$\vec{e_{1}},...,\vec{e_{d}}$下的矩阵.$\overline{A}$为$\overline{A}$在$\vec{e_{d+1}},...\vec{e_{n}}$下的矩阵,则$\mathcal{A}$在$\vec{e_{1}},...,\vec{e_{d}},\vec{e_{d+1}},...,\vec{e_{n}}$下的矩阵是\\
+%matrix begin
+\begin{equation}
+A=
+\left[ \begin{array}{cc}
+A_{U} & B\\
+0 & \overline{A}
+\end{array} 
+\right]
+\end{equation},其中B$\in F^{d\times(n-d)}$
+%matrix end
+\paragraph{推论5.2}
+沿用定理5.3中记号,$\mathcal{X_{\mathcal{A}}}(t)=\mathcal{X_{\overline{A}}}(t)\mathcal{X_{\mathcal{A_{U}}}}$
+\paragraph{命题5.2}
+设$\mathcal{A}\in\mathcal{L}(V)$.U是$\mathcal{A}$-不变子空间,P$\in F[t]$则\\
+(i) U是$\mathcal{P}(\mathcal{A})$-子空间\\
+(ii) 设$\overline{\mathcal{A}}$和$\mathcal{\overline{P(\mathcal{A})}}$是$\mathcal{A}$和$\mathcal{P}$($\mathcal{A}$)关于U的商算子,则$\mathcal{P}$($\overline{\mathcal{A}})=P(\overline{A})$
+\end{document}
