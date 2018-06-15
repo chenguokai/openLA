@@ -120,4 +120,40 @@ A_{U} & B\\
 设$\mathcal{A} \in M_{n}(F)$,则\\
 (i) $\mathcal{X_{A}}(t)$零化$A$\\
 (ii) $\mu_{A}(t) \arrowvert \mathcal{X}_{A}(t)$,特别地,$deg\mu_{A} \le n$\\
+
+\subsection{§6 各种类型的直和分解}
+
+\subsubsection{§6.1 预备引理}
+
+\paragraph{引理6.1}
+设$p_{1},...,p_{k},q \in F[t]\backslash \{0\}$\\
+(i) 如果$\forall i \in \{1,...,k\},gcd(p_{I},q) = 1$,则$gcd(p_{1},...,p_{k},q) = 1$\\
+(ii) 如果$p_{1},...,p_{k}$两两互素,且$p_{I}\arrowvert q$.\\
+
+\paragraph{引理6.2}
+设$p_{1},...,p_{k} \in F[t] \backslash \{0\}$两两互素,则$lcm(p_{1},...,p_{k}) = p_{1}...p_{k}$
+
+\paragraph{引理6.3}
+设$\mathcal{A} \in \mathcal{L}(V),f\in F[t]$零化$\mathcal{A}$,设$f=pq$,其中$p,q\in F[t] \backslash F$且$gcd(p,q) = 1$,令$K_{p}=ker(p(\mathcal{A}))$和$K_{q}=ker(q(\mathcal{A}))$,则\\
+(i) $K_{p}$和$K_{q}$是$\mathcal{A}$-子空间且$V=K_{p}\bigoplus K_{q}$\\
+(ii) $p(\mathcal{A})\arrowvert_{K_{q}}$和$q(\mathcal{A})\arrowvert_{K_{p}}$上都是双射\\
+(iii) 设 $f=\mu_{\mathcal{A}}$且$p,q$都首一,则$p$和$q$分别是$\mathcal{A}\arrowvert_{K_{q}}$和$\mathcal{A}\arrowvert_{K_{q}}$的极小多项式.
+\subsubsection{§6.2 广义特征子空间分解}
+\paragraph{定义}
+设$\mathcal{A}\in \mathcal{L}(V),\mu_{\mathcal{A}}$在$F[t]$中的不可约因式分解为$\mu_{\mathcal{A}}=p_{1}^{m_{1}}...p_{s}^{m_{s}}$,其中$p_{1},...,p_{s} \in F[t] \backslash F$,首一,不可约,两两互素,$m_{1},...,m_{s} \in \mathbb{Z}^{+}$,则$ker(p_{i}^{m_{i}}(\mathcal{A}))$称为$\mathcal{A}$关于因子$p_{i}$的广义子空间,记为$V(p_{i})$.
+
+\paragraph{注}
+$V(p_{I})$是$\mathcal{A}$-子空间
+
+\paragraph{注}
+书中定义的根子空间是广义子空间的特殊情形,我们将在之后说明.
+
+\paragraph{定理6.1}
+利用上述定义中的记号,我们有$V=V(p_{1})\bigoplus ... \bigoplus V(p_{s})$且\\
+(i) $p_{I}^{m_{I}}是\mathcal{A}\arrowvert_{V(p_{i})}$的极小多项式\\
+(ii) $p_{I}(\mathcal{A})$在$V(p_{1})\bigoplus ... \bigoplus V(p_{i-1}) \bigoplus V(p_{i+1})\bigoplus ... \bigoplus V(p_{s})$上是可逆的.
+
+\paragraph{推论6.1}
+设$\mathcal{A}\in\mathcal{L}(V)$,则$\mathcal{A}$可对角化$\Leftrightarrow \mu_{\mathcal{A}}(t) = (t-\alpha_{1})...(t-\alpha_{m})$,其中$\alpha_{1},...,\alpha_{m} \in F$,两两不同.
+
 \end{document}
