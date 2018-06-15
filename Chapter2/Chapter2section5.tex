@@ -5,48 +5,67 @@
 
 \begin{document}
 \section{第二章 线性算子}
+
 \subsection{§1 线性映射的矩阵}
+
 \paragraph{定义}
 设V,W是F上的线性空间,Hom(V,W)是从V到W的线性映射的集合,它是F上的线性空间.
+
 \subsubsection{§1.1 矩阵表示}
+
 设$\vec{e}_{1},...,\vec{e}_{n}$是V的基,$\vec{\varepsilon}_{1},...,\vec{\varepsilon}_{m}$是W的基.$\phi  \in Hom(V,W)    \forall j \in 1,...,n$. 
+
 \subsection{§5 特征子空间的应用}
+
 \subsubsection{§5.1 线性算子和矩阵的对角化}
+
 \paragraph{定义}
 设$\mathcal{A}\in\mathcal{L}(V)$，$\mathcal{A}$在F中互不相同的特征根的集合称为$\mathcal{A}$在F上的谱（spectrum）
+
 \paragraph{定义}
 设$\mathcal{A}\in\mathcal{L}(V)$，如果$\mathcal{A}$在V的某组基下的矩阵是对角的，则称$\mathcal{A}$是可对角化的。设$A \in M_{n}(F)$，如果A相似于某个对角矩阵，则称A在F上是可对角化的。
+
 \paragraph{定理5.1}
 设$\mathcal{A}\in \mathcal{L}(V)$，则下列断言等价：\\
 (i)$\mathcal{A}$可对角化\\
 (ii)$\mathcal{A}$有n个线性无关的特征向量，其中n=dim(V)\\
 (iii)V=$\bigoplus_{\lambda \in spec(\mathcal{A})}$\\
+
 \paragraph{推论5.1}
 设$\mathcal{A}\in\mathcal{L}(V)$,dimV=n,如果$\mathcal{A}$在F中有n个互不相同的特征根,则$\mathcal{A}$可对角化.
+
 \paragraph{定理5.2}
 设$\mathcal{A}\in\mathcal{L}(V)$,则$\mathcal{A}$可对角化$\Leftrightarrow$(i)$\mathcal{X}_{\mathcal{A}}$在F中可以分解为一次多项式之积(ii)$\mathcal{A}$在每个特征根的代数重数与几何重数相同.
+
 \subsubsection{§5.2 复数方阵的三角化}
+
 \paragraph{引理5.2}
 设V是$\mathbb{C}$上的n维线性空间,n>0,$\mathcal{A}\in\mathcal{L}(V)$,则$\mathcal{A}$有n-1维不变子空间.
+
 \paragraph{定理5.3}
 设$\mathcal{A}\in\mathcal{L}(V)$,其中V是$\mathbb{C}$上n维线性空间,则存在V中一组基,使得$\mathcal{A}$在该基下的矩阵是上三角型的.
+
 \paragraph{推论5.2}
 设A$\in M_{n}(\mathbb{C})$,则A相似于一个上三角型矩阵.
+
 \paragraph{引理5.3}
 设$\mathcal{A}\in\mathcal{L}(V)$,U是$\mathcal{A}$-子空间,定义: \\
 $\overline{\mathcal{A}}:V/U \to V/U$\\
 $\vec{a}+U\mapsto\mathcal{A}(\vec{a})+U$\\
 则$\overline{\mathcal{A}}\in\mathcal{L}(V/U)$
+
 \paragraph{定义}
 设$\mathcal{A}\in\mathcal{L}(V)$,U是$\mathcal{A}$-子空间,则\\
 $\overline{\mathcal{A}}:V/U \to V/U$\\
 $\vec{v}+U\mapsto\mathcal{A}(\vec{v})+U$\\
 称为$\mathcal{A}$关于U的商算子.
+
 \paragraph{命题5.1}
 设$\mathcal{A}\in\mathcal{L}(V)$,U是$\mathcal{A}$-子空间\\
 $\Pi : V \to V/U$ 自然投射\\
 则(i)  $\Pi \circ \mathcal{A} = \overline{\mathcal{A}} \circ \Pi$,其中$\overline{\mathcal{A}}$是$\mathcal{A}$关于U的商映射.\\
 (ii) 设$\varphi : V/U \to V/U$满足$\pi \circ \mathcal{A} = \varphi \circ \pi$,则$\varphi = \overline{\mathcal{A}}$
+
 \paragraph{定理5.3}
 设V是n维线性空间,n>1,设$\mathcal{A}\in \mathcal{L}(V)$,U是$\mathcal{A}$-子空间,d=dimU>0,设$\vec{e}_{1},...,\vec{e}_{d}$是U的基,$\vec{e}_{1},...,\vec{e}_{d},\vec{e}_{d+1},...,\vec{e}_{n}$是V的基.记A|$_{U}$为$A_{U}$,$\mathcal{A}$关于U的商算子为$\overline{\mathcal{A}}$.令$A_{U}$为$\mathcal{A_{U}}$在$\vec{e}_{1},...,\vec{e}_{d}$下的矩阵.$\overline{A}$为$\overline{\mathcal{A}}$在$\vec{e}_{d+1},...\vec{e}_{n}$下的矩阵,则$\mathcal{A}$在$\vec{e}_{1},...,\vec{e}_{d},\vec{e}_{d+1},...,\vec{e}_{n}$下的矩阵是\\
 %matrix begin
@@ -59,10 +78,46 @@ A_{U} & B\\
 \right]
 \end{equation},其中B$\in F^{d\times(n-d)}$
 %matrix end
+
 \paragraph{推论5.2}
 沿用定理5.3中记号,$\mathcal{X_{\mathcal{A}}}(t)=\mathcal{X_{\overline{A}}}(t)\mathcal{X_{\mathcal{A_{U}}}}$
+
 \paragraph{命题5.2}
 设$\mathcal{A}\in\mathcal{L}(V)$.U是$\mathcal{A}$-不变子空间,P$\in F[t]$则\\
 (i) U是$\mathcal{P}(\mathcal{A})$-子空间\\
 (ii) 设$\overline{\mathcal{A}}$和$\mathcal{\overline{P(\mathcal{A})}}$是$\mathcal{A}$和$\mathcal{P}$($\mathcal{A}$)关于U的商算子,则$\mathcal{P}$($\overline{\mathcal{A}})=P(\overline{A})$
+
+\paragraph{定义}
+设$\mathcal{A}\in \mathcal{L}(V),\vec{v}\in V$,由$\vec{v},\mathcal{A}(\vec{v}),\mathcal{A}^{2}(\vec{v}),...$生成的子空间称为由$\mathcal{A}$和$\vec{v}$生成的循环子空间,记为$F[\mathcal{A}]\cdot \vec{v}$
+
+\paragraph{命题5.3}
+设$\mathcal{A}\in\mathcal{L}(V),\vec{v}\in V$\\
+(i) $F[\mathcal{A}]\cdot \vec{v}$是$\mathcal{A}$-子空间\\
+(ii) $F[\mathcal{A}]\cdot\vec{v} = \{ p(\mathcal{A})(\vec{v})\arrowvert p\in F[t] \}$\\
+(iii) $dimF[\mathcal{A}]\cdot \vec{v}$为d$\Leftrightarrow \vec{v},\mathcal{A}(\vec{v}),...,\mathcal{A}^{d-1}(\vec{v})$是$F[\mathcal{A}]\cdot \vec{v}$的一组基(这里$\vec{v} \ne \vec{0}$)
+
+\paragraph{定义}
+设$\mathcal{A}\in \mathcal{L}(V),\vec{v} \in V,p \in F[t]$\\
+(i) 如果$p(\mathcal{A})(\vec{v}) = \vec{0}$,则称$p(t)$是关于$\mathcal{A}$和$\vec{v}$的零化多项式\\
+(ii) 在关于$\mathcal{A}$和$\vec{v}$的所有零化多项式中,非零,次数最低,首一的多项式,称为关于$\mathcal{A}$和$\vec{v}$的极小多项式,记为$\mu_{\mathcal{A},\vec{v}}$
+
+\paragraph{命题5.4}
+设$\mathcal{A} \in \mathcal{L}(V),\vec{v} \in V$\\
+(i) $\mu_{\mathcal{A},\vec{v}}$存在且唯一\\
+(ii) 若$p \in F[t]$是关于$\mathcal{A}$和$\vec{v}$的零化多项式,则$\mu_{\mathcal{A},\vec{v}}\arrowvert p$.特别地$\mu_{\mathcal{A},\vec{v}}\arrowvert \mu_{\mathcal{A}}$\\
+(iii) $dim_{F}F[\mathcal{A}]\cdot \vec{v} = deg\mu_{\mathcal{A},\vec{v}}$\\
+
+\paragraph{引理5.4}
+设$\mathcal{A} \in \mathcal{L}(V)$且$\vec{v} \in V$,如果$V = F[\mathcal{A}] \cdot \vec{v}$,则$\mu_{\mathcal{A}}(t) = \mathcal{X}_{\mathcal{A}}(t)$,特别地$\mathcal{X}_{\mathcal{A}}(t)$零化$\mathcal{A}$.
+
+\paragraph{Cayley-Hamilton定理}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$\mathcal{X}_{\mathcal{A}}(t)$零化$\mathcal{A}$.
+
+\paragraph{推论5.3}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$\mu_{\mathcal{A}} \arrowvert \mathcal{X}_{\mathcal{A}}$,特别地,$deg\mu_{\mathcal{A}} \le dimV$
+
+\paragraph{推论5.4(Cayley-Hamilton定理的矩阵版)}
+设$\mathcal{A} \in M_{n}(F)$,则\\
+(i) $\mathcal{X_{A}}(t)$零化$A$\\
+(ii) $\mu_{A}(t) \arrowvert \mathcal{X}_{A}(t)$,特别地,$deg\mu_{A} \le n$\\
 \end{document}
