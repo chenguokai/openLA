@@ -1,0 +1,109 @@
+%headless because head in section5 now
+%单独编译需要反注释以下内容
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\section{第二章}
+%以上为需反注释内容，最末尾\end{document}需同样处理
+\subsection{§6 各种类型的直和分解}
+
+\subsubsection{§6.1 预备引理}
+
+\paragraph{引理6.1}
+设$p_{1},...,p_{k},q \in F[t]\backslash \{0\}$\\
+(i) 如果$\forall i \in \{1,...,k\},gcd(p_{I},q) = 1$,则$gcd(p_{1},...,p_{k},q) = 1$\\
+(ii) 如果$p_{1},...,p_{k}$两两互素,且$p_{I}\arrowvert q$.\\
+
+\paragraph{引理6.2}
+设$p_{1},...,p_{k} \in F[t] \backslash \{0\}$两两互素,则$lcm(p_{1},...,p_{k}) = p_{1}...p_{k}$
+
+\paragraph{引理6.3}
+设$\mathcal{A} \in \mathcal{L}(V),f\in F[t]$零化$\mathcal{A}$,设$f=pq$,其中$p,q\in F[t] \backslash F$且$gcd(p,q) = 1$,令$K_{p}=ker(p(\mathcal{A}))$和$K_{q}=ker(q(\mathcal{A}))$,则\\
+(i) $K_{p}$和$K_{q}$是$\mathcal{A}$-子空间且$V=K_{p}\bigoplus K_{q}$\\
+(ii) $p(\mathcal{A})\arrowvert_{K_{q}}$和$q(\mathcal{A})\arrowvert_{K_{p}}$上都是双射\\
+(iii) 设 $f=\mu_{\mathcal{A}}$且$p,q$都首一,则$p$和$q$分别是$\mathcal{A}\arrowvert_{K_{q}}$和$\mathcal{A}\arrowvert_{K_{q}}$的极小多项式.
+
+\subsubsection{§6.2 广义特征子空间分解}
+\paragraph{定义}
+设$\mathcal{A}\in \mathcal{L}(V),\mu_{\mathcal{A}}$在$F[t]$中的不可约因式分解为$\mu_{\mathcal{A}}=p_{1}^{m_{1}}...p_{s}^{m_{s}}$,其中$p_{1},...,p_{s} \in F[t] \backslash F$,首一,不可约,两两互素,$m_{1},...,m_{s} \in \mathbb{Z}^{+}$,则$ker(p_{i}^{m_{i}}(\mathcal{A}))$称为$\mathcal{A}$关于因子$p_{i}$的广义子空间,记为$V(p_{i})$.
+
+\paragraph{注}
+$V(p_{I})$是$\mathcal{A}$-子空间
+
+\paragraph{注}
+书中定义的根子空间是广义子空间的特殊情形,我们将在之后说明.
+
+\paragraph{定理6.1}
+利用上述定义中的记号,我们有$V=V(p_{1})\bigoplus ... \bigoplus V(p_{s})$且\\
+(i) $p_{I}^{m_{I}}是\mathcal{A}\arrowvert_{V(p_{i})}$的极小多项式\\
+(ii) $p_{I}(\mathcal{A})$在$V(p_{1})\bigoplus ... \bigoplus V(p_{i-1}) \bigoplus V(p_{i+1})\bigoplus ... \bigoplus V(p_{s})$上是可逆的.
+
+\paragraph{推论6.1}
+设$\mathcal{A}\in\mathcal{L}(V)$,则$\mathcal{A}$可对角化$\Leftrightarrow \mu_{\mathcal{A}}(t) = (t-\alpha_{1})...(t-\alpha_{m})$,其中$\alpha_{1},...,\alpha_{m} \in F$,两两不同.
+
+\paragraph{推论6.2}
+设$\mathcal{A} \in M_{n}(F)$,则$\mathcal{A}$可对角化$\Leftrightarrow \mu_{\mathcal{A}}=(t-\alpha_{1})...(t-\alpha_{s})$,其中$\alpha_{1},...,\alpha_{s} \in F$,两两不同.
+
+\subsubsection{§6.3 循环子空间的分解}
+
+\paragraph{命题5.3}
+基本性质:\\
+(i) $F[\mathcal{A}]\cdot \vec{v}$是$\mathcal{A}$-子空间,\\
+(ii) 如果$d=dimF[\mathcal{A}]\cdot \vec{v}$,则$\vec{v},\mathcal{A}(\vec{v}),...,\mathcal{A}^{d-1}(\vec{v})$是$F[\mathcal{A}]$的基\\
+(iii) 如果$\vec{v},\mathcal{A}(\vec{v}),...,\mathcal{A}^{d-1}(\vec{v})$线性无关,但$\vec{v},\mathcal{A}(\vec{v}),...,\mathcal{A}^{d-1}(\vec{v}),\mathcal{A}^{d}(\vec{v})$线性相关,则$d=dimF[\mathcal{A}]\cdot \vec{v}$\\
+(iv) $F[\mathcal{A}]\cdot \vec{v} = \{ p(\mathcal{A})(\vec{v})\arrowvert p \in F[t] \}$
+
+\paragraph{定理6.2}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$\exists \vec{v}_{1},...,\vec{v}_{k} \in V$使得$V=F[\mathcal{A}]\cdot \vec{v}_{1} \bigoplus ... \bigoplus F[\mathcal{A}] \cdot \vec{v}_{k}$.
+
+\paragraph{推论6.3(Cayley-Hamilton定理的加强版)}
+设$\mathcal{A} \in \mathcal{L}(V)$,\\
+(i) $\mu_{\mathcal{A}} \arrowvert \mathcal{X}_{\mathcal{A}}$\\
+(ii) 设$p$是$\mathcal{X}_{\mathcal{A}}$的一个不可约因子,则$p\arrowvert \mu_{\mathcal{A}}$
+
+\paragraph{推论6.4}
+设$F=\mathbb{C},\mathcal{A} \in \mathcal{L}(V)$,则\\
+(i) $\mathcal{X}_{\mathcal{A}}$的根与$\mu_{\mathcal{A}}$的根相同(不计重数)\\
+(ii) $\mathcal{A}$可对角化$\Leftrightarrow gcd(\mu_{\mathcal{A}},\mu^{'}_{\mathcal{A}}) = 1$
+
+\subsubsection{§6.4 根子空间分解}
+
+\paragraph{定义}
+设$F=\mathbb{C},\mathcal{A} \in \mathcal{L}(V),\lambda \in spec_{\mathbb{C}}(\mathcal{A}),\mathcal{A}$关于$\lambda$的根子空间是$\{ \vec{v} \in V \arrowvert \exists k \in \mathbb{N} , (\mathcal{A}-\lambda \mathcal{E})^{k}(\vec{v}) = \vec{0} \}$,记为$V(\lambda)$
+
+\paragraph{引理6.4}
+利用上述定义中的记号,则$(t-\lambda) \arrowvert \mu_{\mathcal{A}}$且$V(t-\lambda) = V(\lambda)$.
+
+\subsubsection{§6.5 循环子空间的进一步的性质}
+
+\paragraph{命题6.1}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$V$是$\mathcal{A}$-循环的$\Leftrightarrow deg(\mu_\mathcal{A}) = dimV$.
+
+\paragraph{命题6.2}
+设$\mathcal{A} \in \mathcal{L}(V)$且$V$是$\mathcal{A}$-循环的,设$\mu_{\mathcal{A}} = t^{n}+\alpha_{n-1}t^{n-1}+...+\alpha_{0},\vec{v}$是$V$关于$\mathcal{A}$的循环向量,则$\mathcal{A}$在基底$\vec{v},\mathcal{A}(\vec{v}),...,\mathcal{A}^{n-1}(\vec{v})$下的矩阵是
+%matrix begin
+$$
+ \left[
+ \begin{matrix}
+  0 & 0 & \cdots & 0 & -\alpha_{0} \\
+  1 & 0 & \cdots & 0 & -\alpha_{1} \\
+  0 & 1 & \cdots & 0 & -\alpha_{2} \\
+     &    & \cdots \\
+  0 & 0 & \cdots & 1 & -\alpha_{n-1}
+   
+  \end{matrix}
+  \right]_{n\times n}
+$$
+%matrix end
+\subsubsection{§6.3(实为6.5)$\mathcal{A}$-不可分子空间}
+
+\paragraph{定义}
+设$\mathcal{A} \in \mathcal{L}(V),U \in V$是$\mathcal{A}$-子空间,如果$U$不能写成两个维数为正的$\mathcal{A}$-子空间的直和,则称$U$是$\mathcal{A}$-不可分的(indecomposable),否则称为$\mathcal{A}$-可分的
+
+\paragraph{定理6.3}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$V$是有限个$\mathcal{A}$-不可分子空间的直和.
+
+% unfinished since page11 on LA2-14
+\end{document}
