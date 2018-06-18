@@ -100,10 +100,32 @@ $$
 \subsubsection{§6.3(实为6.5)$\mathcal{A}$-不可分子空间}
 
 \paragraph{定义}
-设$\mathcal{A} \in \mathcal{L}(V),U \in V$是$\mathcal{A}$-子空间,如果$U$不能写成两个维数为正的$\mathcal{A}$-子空间的直和,则称$U$是$\mathcal{A}$-不可分的(indecomposable),否则称为$\mathcal{A}$-可分的
+设$\mathcal{A} \in \mathcal{L}(V),U \subset V$是$\mathcal{A}$-子空间,如果$U$不能写成两个维数为正的$\mathcal{A}$-子空间的直和,则称$U$是$\mathcal{A}$-不可分的(indecomposable),否则称为$\mathcal{A}$-可分的
 
 \paragraph{定理6.3}
 设$\mathcal{A} \in \mathcal{L}(V)$,则$V$是有限个$\mathcal{A}$-不可分子空间的直和.
 
-% unfinished since page11 on LA2-14
+\paragraph{命题6.3}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$V$是$\mathcal{A}$-不可分的$\Leftrightarrow$\\
+(i) $\mu_{\mathcal{A}}$是$F$上某个不可约多项式的幂次\\
+(ii) $V$是$\mathcal{A}$-循环的.
+
+\paragraph{定理6.4}
+设$\mathcal{A} \in \mathcal{L}(V)$,则$V=V_{1}\bigoplus \cdots \bigoplus V_{l}$,其中$V_{i}$既是$\mathcal{A}$-不可分的,也是$\mathcal{A}$-循环的,特别地$\mathcal{A} \arrowvert_{V_{I}}$的极小多项式是$F[t]$中某个不可约多项式的幂次
+
+\paragraph{命题6.4(复Jordan块的存在性)}
+设$\mathcal{A} \in \mathcal{L}(V),F=\mathbb{C}$,如果$V$是$\mathcal{A}$-不可分的,则存在$V$的一组基,使得$\mathcal{A}$在该基下的矩阵为
+%matrix begin
+$$
+ J_{n}(\lambda)=
+ \left[
+ \begin{matrix}
+  \lambda & 1 &   & 0 \\
+    & \ddots & \ddots &  \\
+     &   & \ddots & 1 &  \\
+  0 &   &    & \lambda 
+  \end{matrix}
+  \right]_{n\times n}
+$$,$\lambda \in \mathbb{C}$,称为关于$\lambda$的$n$阶$Jordan$块
+%matrix end
 \end{document}
