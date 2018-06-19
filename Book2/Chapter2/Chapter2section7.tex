@@ -1,0 +1,65 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+
+%以上为需反注释内容，最末尾\end{document}需同样处理
+\subsection{§7 复矩阵的Jordan标准型(存在性)}
+\paragraph{定理7.1}
+设$\mathcal{A} \in M_{n}(\mathbb{C})$,则存在$\lambda_{1},\cdots,\lambda_{l} \in \mathbb{C}$(不必两两不同),$d_{1},\cdots,d_{l} \in \mathbb{Z}^{+}$,使得
+%matrix begin
+$$
+ A\sim_{s}J_{\mathcal{A}}=
+ \left[
+ \begin{matrix}
+  J_{d_{1}}(\lambda_{1}) &   &   & 0 \\
+    & \ddots &   &   & \\
+     &   & \ddots &   &  \\
+  0 &   &    & J_{d_{l}}(\lambda_{l}) 
+  \end{matrix}
+  \right]_{n\times n}
+$$
+%matrix end
+
+\paragraph{注}
+(1) $\lambda_{1},\cdots,\lambda_{l}$互不相同的元素组成$spce_{\mathbb{C}}(A)$\\
+(2) $\mathcal{X}_{A}=(t-\lambda_{1})^{d_{1}}\cdots(t-\lambda_{l})^{d_{l}}$\\
+$\mu_{A}=lcm((t-\lambda_{1})^{d_{1}}\cdots(t-\lambda_{l})^{d_{l}})$\\
+(3) 如果$d_{1}=\cdots=d_{l}=1$,则
+%matrix begin
+$$
+ J_{\mathcal{A}}=
+ \left[
+ \begin{matrix}
+  \lambda_{1} &   &   & 0 \\
+    & \ddots &   &   & \\
+     &   & \ddots &   &  \\
+  0 &   &    & \lambda_{l}
+  \end{matrix}
+  \right]_{n\times n}
+$$
+%matrix end
+即$A$可对角化
+
+\paragraph{注}
+$d_{1},\cdots,d_{l}$是否唯一?$l$是否唯一?即$J_{A}$是否唯一
+
+\subsection{§8 矩阵的准素有理规范型简介}
+
+\paragraph{定理8.1}
+设$A\in M_{n}(F)$,则存在$d_{1},\cdots,d_{l}\in \mathbb{Z}^{+}$,则存在$l_{1},\cdots,l_{s} \in \mathbb{Z}^{+},p_{1},\cdots,p_{s} \in F[t]\backslash F$不可约,使得
+%matrix begin
+$$
+ A \sim
+ \left[
+ \begin{matrix}
+  J_{l_{1}}(p_{1}) &   &   & 0 \\
+    & \ddots &   &   & \\
+     &   & \ddots &   &  \\
+  0 &   &    & J_{l_{s}}(p_{s})
+  \end{matrix}
+  \right]_{n\times n}
+$$
+%matrix end
+\end{document}
