@@ -62,4 +62,30 @@ $$
   \right]_{n\times n}
 $$
 %matrix end
+
+\subsection{§9 初等因子组}
+
+\paragraph{定义}
+
+重集(multi-sets)-集合中相同的元素允许出现若干次
+
+\paragraph{定义}
+
+$\mathcal{A} \in \mathcal{L}(V)$,
+$V=V_{1}\bigoplus \cdots \bigoplus V_{l} (*)$,\\
+其中$V_{1},\cdots,V_{l}$是$\mathcal{A}$-不可分的,设$A_{i}=\mathcal{A}\arrowvert_{V_{i}},I=1,\cdots,l$,则重集$\{ \mu_{\mathcal{A}_{1}},\cdots,\mu_{\mathcal{A}_{l}}\}$称为$\mathcal{A}$关于$(*)$的初等因子组.
+
+\paragraph{目的}
+
+(1) 证明初等因子组由$\mathcal{A}$确定,与$V$的$\mathcal{A}$-不可分子空间的直和分解无关
+(2) 通过初等因子组可以“唯一”地确定$Jordan$标准型
+
+\paragraph{引理9.1}
+
+设$\mathcal{A} \in \mathcal{L}(V),V=F[\mathcal{A}] \cdot \vec{v},\mu_{\mathcal{A},\vec{v}}=pq$,其中$p,q \in F[t] \backslash F,$首一,令$\vec{w}=q(\mathcal{A})(\vec{v})$,则$\mu_{\mathcal{A},\vec{w}}$.
+
+\paragraph{定理9.1}
+
+设$\mathcal{A} \in \mathcal{L}(V),\mu_{\mathcal{A}}=p^{m},$其中$p \in F[t]$不可约,对$\forall l \in \mathbb{Z}^{+},$令$n_{l}$为$p^{l}$是$\mathcal{A}$关于某个$\mathcal{A}$-不可分子空间直和分解的初等因子组的重数.再令$r_{l}=rank(p(\mathcal{A})^{l})$,其中$l \in \mathbb{N}$,则$n_{l}=\frac{1}{d}(r_{l+1}+r_{l-1}-2r_{l})$
+
 \end{document}

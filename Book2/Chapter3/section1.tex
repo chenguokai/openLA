@@ -1,0 +1,92 @@
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\subsubsection{1.1 }
+
+\paragraph{命题1.1}
+设$V$是欧氏空间\\
+(i) $\forall \vec{x} \in V, \vec{0} \cdot \vec{x} = 0$\\
+(ii) $\vec{x}\cdot\vec{x} = 0 \Leftrightarrow \vec{x} = \vec{0}$
+
+\paragraph{注}
+在本节中$V$是欧氏空间,$\vec{v} \in V, L_{\vec{v}}:V \rightarrow \mathbb{R} \vec{x} \mapsto \vec{v}\cdot\vec{x}$是线性函数,即$L_{\vec{v}} \in V^{*}$
+
+\paragraph{定义}
+设$\vec{v}_{1},\cdots,\vec{v}_{s} \in V,G(\vec{v}_{1},\cdots,\vec{v}_{s})=(\vec{v}_{i}\cdot \vec{v}_{j})_{i=1,\cdots,s,j=1,\cdots,s}$称为$\vec{v}_{1},\cdots,\vec{v}_{s}$的Gram矩阵,$G(\vec{v}_{1},\cdots,\vec{v}_{s})$是$s$阶实对称方阵
+
+\paragraph{定理1.1}
+设$\vec{v}_{1},\cdots,\vec{v}_{s} \in V$,\\
+$\vec{v}_{1},\cdots,\vec{v}_{s}$线性相关$\Leftrightarrow G(\vec{v}_{1},\cdots,\vec{v}_{s})$满秩
+
+\subsubsection{1.2 长度(范数)和距离}
+
+\paragraph{定义}
+设$\vec{x} \in V, \sqrt{\vec{x}\cdot\vec{x}}$称为$\vec{x}$的长度或范数,记为$\vert \vec{x} \vert$或$\Vert \vec{x} \Vert$.
+
+\paragraph{命题1.2(Cauchy-Buniakowski不等式)}
+
+设$\vec{x},\vec{y} \in V,\vert \vec{x}\cdot \vec{y} \vert \le \vert \vec{x} \vert \vert \vec{y} \vert$;等号成立 $ \Leftrightarrow \vec{x},\vec{y}$线性相关
+
+\paragraph{定义}
+设$\vec{x},\vec{y} \in V,\vec{x},\vec{y}$之间的距离定义为$\vert \vec{x}-\vec{y} \vert$
+
+\paragraph{注}
+$\vec{x} \in V,$如果$\vert \vec{x}\vert = 1,$则称$\vec{x}$是单位向量
+\subsubsection{1.5 正交矩阵}
+
+\paragraph{定义}
+设$A \in GL_{n}(\mathbb{R})$,如果$A^{t}=A$,则称$A$是正交矩阵.
+
+\paragraph{定理1.3}
+设$V$的一组单位正交基是$\vec{e}_{1}, \cdots ,\vec{e}_{n}$,而$\vec{\varepsilon}_{1},\cdots ,\vec{\varepsilon}_{n}$是$V$的一组基且$A \in GL_{n}(\mathbb{R}),(\vec{\varepsilon}_{1},\vec{\varepsilon}_{n})=(\vec{e}_{1},\cdots ,\vec{e}_{n})A$,则$\vec{\varepsilon}_{1},\vec{\varepsilon}_{n}$是单位正交基$\Leftrightarrow A$是正交矩阵.
+
+\paragraph{命题1.3}
+设$A$是正交矩阵,则\\
+(i) $det(A)=\pm1$\\
+(ii) $A^{t}$即$A^{-1}$也是正交矩阵,\\
+(iii) 再设$B$是正交矩阵,则$AB$也是正交矩阵.\\
+
+\paragraph{推论1.1}
+令$O_{n}(\mathbb{R})=\{A \in GL_{n}(\mathbb{R}) \arrowvert A$正交$\}$,则$O_{n}(\mathbb{R})$是$GL_{n}(\mathbb{R})$的子群
+% new begin
+\subsubsection{1.6 正交相似}
+\paragraph{定义}
+设$A,B \in M_{n}(\mathbb{R})$,如果存在$P \in O_{n}(\mathbb{R})$,使得$B = P^{-1}AP$,则称$B$与$A$正交相似，记为$A\sim_{o}B$
+
+\paragraph{注}
+如果$A\sim_{o}B$,则$A_{s}B$且$A\sim_{c}B$
+\paragraph{问题}
+给定$A \in M_{n}(\mathbb{R})$,求$A$在正交相似下的“标准型”
+
+\paragraph{命题1.4}
+$\sim_{o}$是等价关系
+
+\paragraph{定义}
+设$U \subset V$,子空间,$U$的正交补$U^{\bot} = \{ \vec{v}\in V\arrowvert \forall \vec{u} \in U,\vec{v} \bot \vec{u}\}$
+
+\paragraph{命题1.5}
+设$U \subset V$,子空间,则\\
+(i) $U^{\bot}$是子空间\\
+(ii) $V = U \bigoplus U^{\bot}$\\
+(iii) $(U^{\bot})^{\bot}=U$
+
+\subsection{2 正规算子与正规矩阵}
+
+\subsubsection{2.1 伴随算子}
+
+\paragraph{定义}
+设$V$是$n$维欧氏空间,$\mathcal{A} \in \mathcal{L}(V)$,设$\mathcal{A}^{*} \in \mathcal{L}(V)$,使得$\forall \vec{x},\vec{y} \in V$,$\mathcal{A}(\vec{x})\cdot \vec{y} = \vec{x} \cdot \mathcal{A}^{*}(\vec{y})$,则称$\mathcal{A}^{*}$是$\mathcal{A}$的伴随算子.\\
+伴随算子:$\phi : V \rightarrow V^{*}$\\
+$\vec{v} \mapsto L_{\vec{v}}$\\
+$\phi(\vec{v}) = 0^{*},L_{\vec{v}}(\vec{u}) = 0 \Leftrightarrow \vec{u} \in V,\vec{v}\cdot\vec{u} = 0 \Leftrightarrow ker(\phi) = \{\vec{0}\} \Leftrightarrow \phi$是线性同构.
+
+\paragraph{定理2.1}
+设$\mathcal{A} \in \mathcal{L}(V)$,则\\
+(i) $\mathcal{A}$的伴随算子存在且唯一\\
+(ii) 设$\vec{e}_{1},\cdots,\vec{e}_{n}$是$V$的一组单位正交基,且$\mathcal{A}$在$\vec{e}_{1},\cdots,\vec{e}_{n}$下的矩阵是$A$,则$\mathcal{A}$的伴随算子在$\vec{e}_{1},\cdots,\vec{e}_{n}$下的矩阵是$A^{t}$.
+
+
+\end{document}
+
