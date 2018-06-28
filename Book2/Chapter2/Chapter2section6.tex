@@ -1,12 +1,13 @@
-%headless because head in section5 now
-%单独编译需要反注释以下内容
+\ifx\total\undefined
 \documentclass{ctexart}
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \begin{document}
 \section{第二章}
-%以上为需反注释内容，最末尾\end{document}需同样处理
+\fi
+
+
 \subsection{§6 各种类型的直和分解}
 
 \subsubsection{§6.1 预备引理}
@@ -128,4 +129,6 @@ $$
   \right]_{n\times n}
 $$,$\lambda \in \mathbb{C}$,称为关于$\lambda$的$n$阶$Jordan$块
 %matrix end
+\ifx\total\undefined
 \end{document}
+\fi

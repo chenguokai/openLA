@@ -1,10 +1,11 @@
+\ifx\total\undefined
 \documentclass{ctexart}
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \begin{document}
+\fi
 
-%以上为需反注释内容，最末尾\end{document}需同样处理
 \subsection{§7 复矩阵的Jordan标准型(存在性)}
 \paragraph{定理7.1}
 设$\mathcal{A} \in M_{n}(\mathbb{C})$,则存在$\lambda_{1},\cdots,\lambda_{l} \in \mathbb{C}$(不必两两不同),$d_{1},\cdots,d_{l} \in \mathbb{Z}^{+}$,使得
@@ -88,4 +89,6 @@ $V=V_{1}\bigoplus \cdots \bigoplus V_{l} (*)$,\\
 
 设$\mathcal{A} \in \mathcal{L}(V),\mu_{\mathcal{A}}=p^{m},$其中$p \in F[t]$不可约,对$\forall l \in \mathbb{Z}^{+},$令$n_{l}$为$p^{l}$是$\mathcal{A}$关于某个$\mathcal{A}$-不可分子空间直和分解的初等因子组的重数.再令$r_{l}=rank(p(\mathcal{A})^{l})$,其中$l \in \mathbb{N}$,则$n_{l}=\frac{1}{d}(r_{l+1}+r_{l-1}-2r_{l})$
 
+\ifx\total\undefined
 \end{document}
+\fi
