@@ -5,8 +5,28 @@
 \usepackage{amsfonts}
 \begin{document}
 \fi
+\section{第三章 内积空间}
+\subsection{1 欧氏空间}
+\subsubsection{1.1 内积}
+设$V$是$\mathbb{R}$上$n$维线性空间$f: V \times V \rightarrow \mathbb{R}$是对称双线性型,使得$f$对应的二次型是正定的.\\
+双线性:$\forall \vec{x},\vec{y},\vec{z} \in V,\alpha,\beta \in \mathbb{R},$\\
+$f(\alpha\vec{x}+\beta\vec{y},\vec{z}) = \alpha f(\vec{x},\vec{z})+\beta f(\vec{y},\vec{z})$\\
+$f(\vec{x},\alpha\vec{y}+\beta\vec{z}) = \alpha f(\vec{x},\vec{y})+\beta f(\vec{x},\vec{z})$\\
+对称:$f(\vec{x},\vec{y})=f(\vec{y},\vec{z})$\\
+二次型:$q(\vec{x}) = f(\vec{x},\vec{x})$
+正定:$\forall \vec{x} \in V \backslash \{ \vec{0} \},q(\vec{x}) > 0$,称$(V,f)$是一个欧氏空间,其中$f$是$V$上的内积
 
-\subsubsection{1.1 }
+\paragraph{注}
+设$\vec{x} \in V$,则\\
+(i) $\vec{x}\cdot \vec{0} = \vec{0}$\\
+(ii) $\vec{x} \cdot \vec{x} = \vec{0} \Leftrightarrow \vec{x} = \vec{0}$
+
+\paragraph{定义}
+设$\vec{x} \in V,\sqrt{\vec{x} \cdot \vec{x}}$,称为$\vec{x}$的长度,记为$\vert \vec{x} \vert$
+
+\paragraph{定义}
+设$\vec{x},\vec{y} \in V, \vert \vec{x}-\vec{y} \vert$称为$\vec{x}$与$\vec{y}$的距离.
+
 
 \paragraph{命题1.1}
 设$V$是欧氏空间\\

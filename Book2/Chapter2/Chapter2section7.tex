@@ -85,9 +85,34 @@ $V=V_{1}\bigoplus \cdots \bigoplus V_{l} (*)$,\\
 
 设$\mathcal{A} \in \mathcal{L}(V),V=F[\mathcal{A}] \cdot \vec{v},\mu_{\mathcal{A},\vec{v}}=pq$,其中$p,q \in F[t] \backslash F,$首一,令$\vec{w}=q(\mathcal{A})(\vec{v})$,则$\mu_{\mathcal{A},\vec{w}}$.
 
+\paragraph{引理9.2}
+设$\mathcal{A} \in \mathcal{L}(V),V=F[\mathcal{A}]\cdot \vec{v}$,设$\mu_{\mathcal{A}} = p^{m}$,其中$p\in F[t],$则$\forall k \in \mathbb{N}$\\
+
+$$
+rank(p(\mathcal{A})^{k})=
+\begin{cases}
+(m-k)deg(p) &  0 \leq k < m\\
+0 & k \geq m
+\end{cases}$$
+
+\paragraph{引理9.3}
+%设$\mathcal{A} \in \mathcal{L}(V),f \in F[t]$,如果$U \subset V$是$\mathcal{A}$-不变的,则$U$也是$f(\mathcal{A})-$不变的.
+设$\mathcal{A} \in \mathcal{L}(V),f \in F[t]$,如果$U \subset V$是$\mathcal{A}$-不变的,则$U$也是$f(\mathcal{A})-$不变的.
+
+\paragraph{引理9.4}
+如上假设,再令$V =  U_{1} \bigoplus \cdots \bigoplus U_{l}$,其中$U_{1},...,U_{l}$是$\mathcal{A}$-不变子空间,则$f(\mathcal{A})(V) = f(\mathcal{A})(U_{1}) \bigoplus \cdots \bigoplus f(\mathcal{A})(U_{l})$
+
+
+
 \paragraph{定理9.1}
 
 设$\mathcal{A} \in \mathcal{L}(V),\mu_{\mathcal{A}}=p^{m},$其中$p \in F[t]$不可约,对$\forall l \in \mathbb{Z}^{+},$令$n_{l}$为$p^{l}$是$\mathcal{A}$关于某个$\mathcal{A}$-不可分子空间直和分解的初等因子组的重数.再令$r_{l}=rank(p(\mathcal{A})^{l})$,其中$l \in \mathbb{N}$,则$n_{l}=\frac{1}{d}(r_{l+1}+r_{l-1}-2r_{l})$
+
+\paragraph{定理9.2}
+设$\mathcal{A} \in \mathcal{L}(V),\mu_{\mathcal{A}}$的两两不同、首一的不可约因子是$p_{1},\cdots,p_{s} \in F[t]$,对$\forall I \in \{1,\cdots,s\},l \in \mathbb{Z}^{+}$,令$N(i,l)$是$p^{l}_{i}$在$\mathcal{A}$的某个初等因子组中的重数,$R_{i,l} = rank(p_{I}(\mathcal{A})^{l})$,则$N(i,l)= \frac{1}{deg(p_{I})}(R_{i,l+1}+R_{i,l-1}-2R_{i,l})$
+
+\subsection{§10 Jordan标准型的唯一性和应用}
+
 
 \ifx\total\undefined
 \end{document}
