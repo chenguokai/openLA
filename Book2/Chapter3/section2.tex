@@ -1,0 +1,45 @@
+\ifx\total\undefined 
+\documentclass{ctexart}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\fi
+
+\paragraph{定义}
+设$\mathcal{A} \in \mathcal{L}(V),\mathcal{A}^{*}$是$\mathcal{A}$的伴随算子，如果$\mathcal{A} \circ \mathcal{A}^{*}$,则称$\mathcal{A}$是正规(normal)算子.设$\mathcal{A} \in M_{n}(\mathbb{R})$,如果$AA^{t} = A^{t}A$,则称$A$是正规矩阵.
+
+\paragraph{注}
+由定理2.1和第二章定理2.1可知,$\mathcal{A}$是正规算子当且仅当$\mathcal{A}$在某组单位正交基下的矩阵是正规的.
+
+\paragraph{引理2.1}
+设$\mathcal{A} \in \mathbb{R}^{m \times n}$,如果$tr(AA^{t}) = 0$,则$A = O_{m \times n}$
+
+\paragraph{引理2.2}
+设$W$是$\mathcal{R}$上$n$维线性空间,$n>0$,$\mathcal{A} \in \mathcal{L}(V)$,则$W$有1维或2维不变子空间.
+
+\paragraph{引理2.3}
+设$A \in M_{n}(\mathbb{R})$是正规的,如果
+%matrix begin
+$$
+ A =
+ \left[
+ \begin{matrix}
+  A_{1} & A_{2} \\
+   0 & A_{3}
+  \end{matrix}
+  \right]
+$$,其中$A_{1} \in M_{d}(\mathbb{R}),A_{2} \in \mathbb{R}^{d \times n-d},A_{3} \in M_{n-d}(\mathbb{R}),0<d<n.$,则$A_{2} = 0$
+%matrix end
+
+\paragraph{引理2.4}
+设$\mathcal{A} \in \mathcal{L}(V)$正规,如果$U \subset V$是$\mathcal{A}-$不变子空间,则$U^{\bot}$也是
+
+\paragraph{引理2.5}
+设$\mathcal{A} \in \mathcal{L}(V)$正规,则存在$A-$不可分子空间$U_{1},\cdots,U_{l}$使得\\
+(i) $V = U_{1} \bigoplus \cdots \bigoplus U_{l}$
+(ii) $\forall i,j \in \{1,\cdots\}$
+
+\ifx\total\undefined 
+\end{document}
+\fi
